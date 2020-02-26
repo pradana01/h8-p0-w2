@@ -1,0 +1,42 @@
+1. SET massa TO 600
+   SET akselerasi TO 2
+   CALCULATE massa TIMES akselerasi
+   SET resultan gaya to hasil kalkulasi
+   DISPLAY resultan gaya
+
+
+
+2. - Tentukan tahun dengan nomor bulat berapapun
+   - Masukkan peraturan yaitu, bila tahun tersebut habis dibagi 4 dan tidak habis dibagi 100 maka tahun tersebut adalah tahun kabisat.
+     Bila tahun tersebut habis dibagi 4, habis dibagi 100 dan habis dibagi 400 maka tahun adalah tahun tersebut kabisat
+   - Munculkan tulisan tahun kabisat jika hasilnya tahun kabisat dan bukan tahun kabisat jika hasilnya bukan tahun kabisat
+
+SET tahun TO nomor bulat berapapun
+   CASE tahun MOD 4 EQUALS TO 0 AND tahun MOD 100 NOT EQUALS TO 0 : DISPLAY tahun kabisat
+   CASE tahun MOD 4 EQUALS TO 0 AND tahun MOD 100 EQUALS TO 0 AND tahun MOD 400 EQUALS TO 0 : DISPLAY tahun kabisat
+   OTHERS:
+   DISPLAY bukan tahun kabisat
+
+
+ 
+3. - masukkan 1 pakaian ke mesin cuci
+   - Terus masukkan pakaian sebanyak 1 pakaian
+   - Jika pakaian sudah 20, nyalakan mesin
+
+SET pakaian TO 1
+REPEAT
+  ADD 1 TO pakaian
+UNTIL pakaian EQUALS TO 20
+DISPLAY mesin menyala
+
+4. - Guru Mulai berkeliling
+   - Periksa kuku panjang atau kuku tidak panjang pada murid
+   - Jika murid memiliki kuku panjang, hukum murid
+   - jika murid memiliki kuku tidak panjang, puji murid
+   - berhenti berkeliling setelah 40 murid selesai diperiksa semua
+
+GET murid TO 1
+GET 'pemeriksaan' TO (IF murid HAS kuku panjang DO hukum murid ELSE puji murid)
+REPEAT
+  ACTION pemeriksaan
+UNTIL murid EQUALS TO 40
