@@ -1,7 +1,7 @@
-1. SET massa TO 600
-   SET akselerasi TO 2
+1. GET massa TO 600
+   GET akselerasi TO 2
    CALCULATE massa TIMES akselerasi
-   SET resultan gaya to hasil kalkulasi
+   GET resultan gaya to hasil kalkulasi
    DISPLAY resultan gaya
 
 
@@ -11,7 +11,7 @@
      Bila tahun tersebut habis dibagi 4, habis dibagi 100 dan habis dibagi 400 maka tahun adalah tahun tersebut kabisat
    - Munculkan tulisan tahun kabisat jika hasilnya tahun kabisat dan bukan tahun kabisat jika hasilnya bukan tahun kabisat
 
-SET tahun TO nomor bulat berapapun
+GET tahun TO nomor bulat berapapun
    CASE tahun MOD 4 EQUALS TO 0 AND tahun MOD 100 NOT EQUALS TO 0 : DISPLAY tahun kabisat
    CASE tahun MOD 4 EQUALS TO 0 AND tahun MOD 100 EQUALS TO 0 AND tahun MOD 400 EQUALS TO 0 : DISPLAY tahun kabisat
    OTHERS:
@@ -23,9 +23,9 @@ SET tahun TO nomor bulat berapapun
    - Terus masukkan pakaian sebanyak 1 pakaian
    - Jika pakaian sudah 20, nyalakan mesin
 
-SET pakaian TO 1
+GET pakaian TO 1
 REPEAT
-  ADD 1 TO pakaian
+  INCREMENT pakaian
 UNTIL pakaian EQUALS TO 20
 DISPLAY mesin menyala
 
